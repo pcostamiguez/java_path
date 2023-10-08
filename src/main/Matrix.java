@@ -24,8 +24,7 @@ public class Matrix {
 				for (int j = 0; j < n; j++) {
 					Random rd = new Random();
 					int random = rd.nextInt(256) - 128;
-					String numeroFormatado = String.format("%02d", random);
-					matrix[i][j] = Integer.parseInt(numeroFormatado);
+					matrix[i][j] = random;
 
 					if (matrix[i][j] < 0) {
 						negatives.add(matrix[i][j]);
